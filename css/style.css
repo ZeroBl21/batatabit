@@ -428,6 +428,8 @@ main{
     color: var(--just-white);
 }
 
+/* Plans Section Start */
+
 .main-plans--container{
     width: 100%;
     min-width: 320px;
@@ -459,13 +461,26 @@ main{
     color: #757575;
 }
 
+/* Slider */
+
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+/* */
+
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 30px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -511,3 +526,28 @@ main{
     color: #757575;
 }
 
+.plan-card--ca{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--off-white);
+    border-radius: 4px;
+    border: 2px solid var(--bitcoin-orange);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
+
+
+
+/* Plan Section End */
