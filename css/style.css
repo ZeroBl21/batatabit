@@ -145,6 +145,15 @@ main{
 /* Main Currency/Comissions Start */
 
 
+.main-tables-container{
+    display: flex;
+    height: 256px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    justify-content: space-between;
+}
+
 .main-exchange-container h2{
     margin-bottom: 30px;
     font-size: 2.4rem;
@@ -162,12 +171,12 @@ main{
 }
 
 .main-currency-table{
-    width: 70px;
+    width: 70%;
     min-width: 255px;
     max-width: 550px;
-    height: 360px;
-    margin: 0 auto;
+    margin: 0 25px;
     font-family: "Inter", sans-serif;
+    scroll-snap-align: center;
 }
 
 .main-currency-table .currency-table--title{
@@ -196,7 +205,7 @@ main{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: var(--grey);
+    color: var(--warm-black);
     background-color: var(--just-white);
 }
 
